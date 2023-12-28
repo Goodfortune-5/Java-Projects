@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+<bean class="com.jsp.Demo.CollectionType.Emp" name="emp1"  >
+<property name ="vehicle">
+<list>
+<value>BMW</value>
+<value>Mercedes Benz</value>
+<value>Audi</value>
+<value>Lamborghini</value>
+</list>
+</property>
+<property name ="email" >
+<set>
+<value>jsp@123</value>
+<value>qsp@123</value>
+<value>psp@123</value>
+<value>jsp@123</value> 
+</set>
+</property>
+<property name="name">
+<map>
+<entry key="Raj" value="Kumar" />
+<entry key="Ram" value="Hanuman" /> 
+<entry key="Pinki" value="Chinki" /> 
+<entry key="Seeta" value="Geeta" />
+</map>
+</property>
+</bean>
+
+
+</beans>
